@@ -4,16 +4,69 @@
 }
 
 h1{
-  font-family: "Montserrat";
   font-weight: 900;
-  size: 3rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
-#title{
-  background-color: #ff4c68;
+h3{
+  font-weight: 900;
+}
+
+p{
+  color: #8f8f8f;
 }
 
 .container-fluid{
   padding: 3% 15%;
+}
+.navbar{
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-weight:400;
+  font-size: 2.5rem;
+}
+
+
+.nav-link{
+  font-size: 1.2rem;
+  font-weight:400;
+  padding: 0 50px;
+
+}
+.custom-dwld{
+  margin: 5% 3% 5% 0;
+}
+
+.title-image{
+  width: 60%;
+  transform: rotate(20deg);
+}
+
+.lg-glyph{
+  font-size: 40px;
+  color: #ef8172;
+  padding: 20% 15% 2%;
+}
+
+.lg-glyph:hover{
+  color:#ff4c68;
+}
+
+#title{
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+#features{
+  padding: 7% 20%;
+}
+
+#testimonials{
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ef8172;
 }

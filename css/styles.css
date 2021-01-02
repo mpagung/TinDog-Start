@@ -1,85 +1,158 @@
-*{
+body {
   font-family: Montserrat, Arial, Geneva, Helvetica, sans-serif;
   font-weight: 400;
+  text-align: center
 }
 
-h1{
+h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  font-size: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
   line-height: 1.5;
 }
 
-h2{
-  font-weight: 900;
-  font-size:3rem;
+h2 {
+  font-size: 2rem;
   line-height: 1.5;
 }
 
-h3{
-  font-weight: 900;
+h4 {
+  font-size: 1.2rem;
+  margin-top: 4px;
 }
 
-p{
+p {
   color: #8f8f8f;
 }
 
-.container-fluid{
-  padding: 3% 15%;
+.container-fluid {
+  padding: 7% 15%;
+  /* padding: 3% 15%;
+  padding-bottom: 7%; */
 }
-.navbar{
+
+.navbar {
   padding-bottom: 4.5rem;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: "Ubuntu";
-  font-weight:400;
+  font-weight: 400;
   font-size: 2.5rem;
 }
 
-
-.nav-link{
+.nav-link {
   font-size: 1.2rem;
-  font-weight:400;
+  font-weight: 400;
   padding: 0 50px;
-
 }
-.custom-dwld{
+
+.custom-dwld {
   margin: 5% 3% 5% 0;
 }
 
-.title-image{
-  width: 60%;
-  transform: rotate(20deg);
-}
-
-.lg-glyph{
+.lg-glyph {
   font-size: 40px;
   color: #ef8172;
   padding: 20% 15% 2%;
 }
 
-.lg-glyph:hover{
-  color:#ff4c68;
+.lg-glyph:hover {
+  color: #ff4c68;
 }
 
-.testimonial-image{
+.testimonial-image {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
 }
 
-#title{
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.title-image {
+  position: absolute;
+  height: 80%;
+  bottom: -10%;
+  right: 20%;
+  z-index: -1;
+  transform: rotate(20deg);
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  position: relative;
+  text-align: left;
+  z-index: 0;
+}
+
+#title .container-fluid{
+  padding: 3% 15% 7%
+}
+
+#features {
+  padding: 7% 20%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1
+}
+
+#testimonials {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+#press {
+  background-color: #ef8172;
+  padding: 0 15% 3%;
+}
+
+/* Pricing Selection */
+#pricing {
+  padding: 100px;
+}
+
+/* .pricing-column{
+  padding: 3% 2%
+} */
+/* Call to Action */
+#cta {
   background-color: #ff4c68;
   color: #fff;
 }
 
-#features{
-  padding: 7% 20%;
+/* Footer */
+#footer {
+  background-color: #fff;
+  margin: 0 100px;
 }
 
-#testimonials{
-  padding: 7% 15%;
-  text-align: center;
-  background-color: #ef8172;
-  color: #fff;
+.social-icon {
+  margin: 10px;
+}
+
+@media (max-width:1000px) {
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    height: 60%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  .container-fluid {
+    padding: 3% 10%;
+    padding-bottom: 0;
+  }
 }
